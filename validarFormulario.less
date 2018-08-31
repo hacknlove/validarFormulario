@@ -1,0 +1,38 @@
+form {
+  p.campo.error,
+  label.error,
+  input.error,
+  textarea.error,
+  span.password.error {
+    outline: 2px solid red;
+    outline: 2px solid var(--rojo);
+  }
+  .errores>p{
+    position: relative;
+    top: -.7rem;
+    font-size: 0;
+    text-align: left;
+    color: red;
+    color: var(--rojo);
+    transition: font-size 0.3s;
+  }
+  p.campo.noValido+.errores>.noValido,
+  div.radio.vacio+.errores>.vacio,
+  textarea.vacio+.errores>.vacio,
+  textarea.noValido+.errores>.noValido,
+  textarea.noEncontrado+.errores>.noEncontrado,
+  label.checkbox.noValido+.errores>.noValido,
+  label.inputImagen.vacio+.errores>.vacio,
+  label.inputImagen.noValido+.errores>.noValido,
+  label.inputImagen.tamano+.errores>.tamano,
+  span.password.vacio+.errores>.vacio,
+  span.password.noValido+.errores>.noValido,
+  span.password.inesperado+.errores>.inesperado,
+  span.password.noEncontrado+.errores>.noEncontrado,
+  input.vacio+.errores>.vacio,
+  input.noValido+.errores>.noValido,
+  input.inesperado+.errores>.inesperado,
+  input.noEncontrado+.errores>.noEncontrado {
+    font-size: .9rem;
+  }
+}
