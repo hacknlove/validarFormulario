@@ -107,5 +107,5 @@ $.fn.scrollAError = function () {
 
   $([document.documentElement, document.body]).animate({
     scrollTop: offset
-  }, 2000)
+  }, 300)
 }
